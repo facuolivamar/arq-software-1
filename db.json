@@ -1,31 +1,116 @@
 {
-  "posts": [
+  "sensors": [
     {
       "id": 1,
-      "title": "Post 1"
+      "location": {
+        "name": "Centro",
+        "coordinates": {
+          "lat": 37.8882,
+          "lng": -4.7794
+        }
+      },
+      "type": "temperatura",
+      "value": 23.5,
+      "unit": "°C",
+      "timestamp": "2025-03-28T09:00:00Z"
     },
     {
       "id": 2,
-      "title": "Post 2"
+      "location": {
+        "name": "Norte",
+        "coordinates": {
+          "lat": 37.9000,
+          "lng": -4.7500
+        }
+      },
+      "type": "humedad",
+      "value": 55,
+      "unit": "%",
+      "timestamp": "2025-03-28T09:05:00Z"
     },
     {
       "id": 3,
-      "title": "Post 3"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "location": {
+        "name": "Sur",
+        "coordinates": {
+          "lat": 37.8700,
+          "lng": -4.8000
+        }
+      },
+      "type": "calidad del aire",
+      "value": 42,
+      "unit": "AQI",
+      "timestamp": "2025-03-28T09:10:00Z"
     },
     {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
+      "id": 4,
+      "location": {
+        "name": "Este",
+        "coordinates": {
+          "lat": 37.8882,
+          "lng": -4.7400
+        }
+      },
+      "type": "nivel de CO2",
+      "value": 415,
+      "unit": "ppm",
+      "timestamp": "2025-03-28T09:15:00Z"
+    },
+    {
+      "id": 5,
+      "location": {
+        "name": "Oeste",
+        "coordinates": {
+          "lat": 37.8882,
+          "lng": -4.8200
+        }
+      },
+      "type": "ruido",
+      "value": 68,
+      "unit": "dB",
+      "timestamp": "2025-03-28T09:20:00Z"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "history": [
+    {
+      "sensorId": 1,
+      "records": [
+        { "id": 101, "timestamp": "2025-03-28T08:00:00Z", "value": 22.0 },
+        { "id": 102, "timestamp": "2025-03-28T08:30:00Z", "value": 23.0 },
+        { "id": 103, "timestamp": "2025-03-28T09:00:00Z", "value": 23.5 }
+      ]
+    },
+    {
+      "sensorId": 2,
+      "records": [
+        { "id": 201, "timestamp": "2025-03-28T08:05:00Z", "value": 53 },
+        { "id": 202, "timestamp": "2025-03-28T08:35:00Z", "value": 54 },
+        { "id": 203, "timestamp": "2025-03-28T09:05:00Z", "value": 55 }
+      ]
+    },
+    {
+      "sensorId": 3,
+      "records": [
+        { "id": 301, "timestamp": "2025-03-28T08:10:00Z", "value": 40 },
+        { "id": 302, "timestamp": "2025-03-28T08:40:00Z", "value": 41 },
+        { "id": 303, "timestamp": "2025-03-28T09:10:00Z", "value": 42 }
+      ]
+    },
+    {
+      "sensorId": 4,
+      "records": [
+        { "id": 401, "timestamp": "2025-03-28T08:15:00Z", "value": 410 },
+        { "id": 402, "timestamp": "2025-03-28T08:45:00Z", "value": 412 },
+        { "id": 403, "timestamp": "2025-03-28T09:15:00Z", "value": 415 }
+      ]
+    },
+    {
+      "sensorId": 5,
+      "records": [
+        { "id": 501, "timestamp": "2025-03-28T08:20:00Z", "value": 66 },
+        { "id": 502, "timestamp": "2025-03-28T08:50:00Z", "value": 67 },
+        { "id": 503, "timestamp": "2025-03-28T09:20:00Z", "value": 68 }
+      ]
+    }
+  ]
 }
